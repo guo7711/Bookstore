@@ -1,0 +1,29 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<!--start footer-->
+<div class="footer">
+    Back to Home Page
+    <span/>
+    <a href="index.jsp">Home Page</a>
+    <span/>
+    <span/>
+    <%if((String)session.getAttribute("UserName")==""||(String)session.getAttribute("UserName")!=null){
+    %>
+    <a href="ShopCart.jsp">My Cart</a>
+    <span/>
+    <span/>
+    <a href="userCenter.jsp">My Account</a>
+    <%}%>   
+    Contact Us
+    <span/>
+    <span/>
+    About
+    <span/>
+    <span/>
+    Help
+    <span/>
+    <span/>
+    Conditions of <br />
+    &nbsp;&copy;&nbsp;2009&nbsp;Flourish&nbsp;&amp;&nbsp;Blotts
+</div>
+<!--end footer-->

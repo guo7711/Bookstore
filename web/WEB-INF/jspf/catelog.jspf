@@ -1,0 +1,20 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<div class="catelog">
+            
+    <span style="font-size: 25px;color: red;font-family:Times New Roman">Category</span>
+            <ul>
+            <li><a class="book" href="search.jsp?catelog=<%=java.net.URLEncoder.encode("Computer-Technology")%>"><span>Computer-Technology</span></a>
+            <div class="Hackbox"/>
+            <li><a class="book" href="search.jsp?catelog=<%=java.net.URLEncoder.encode("Finance")%>">Finance</a>
+            <div class="Hackbox"/>
+            <li><a class="book" href="search.jsp?catelog=<%=java.net.URLEncoder.encode("Sports")%>">Sports</a>
+            <div class="Hackbox"/>
+            <li><a class="book" href="search.jsp?catelog=<%=java.net.URLEncoder.encode("Education")%>">Education</a>
+            <div class="Hackbox"/>
+            <li><a class="book" href="search.jsp?catelog=<%=java.net.URLEncoder.encode("Literature")%>">Literature</a>
+           
+            </ul>
+        </div>
+            

@@ -1,0 +1,90 @@
+<%-- any content can be specified here e.g.: --%>
+<%! //处理字符串的方法：
+  public String codeString(String s)
+    { String str=s;
+       try{byte b[]=str.getBytes("ISO-8859-1");
+           str=new String(b);
+           return str;
+         }
+      catch(Exception e)
+         { return str;
+         }
+    }
+%>
+<%@ page pageEncoding="gb2312" %>
+
+
+
+<script>
+            function myfunction()
+{
+document.search..submit();
+}
+function submit()
+{
+    document.search..submit();
+}
+function setHome()
+{
+document.body.style.behavior='url(#default#homepage)';
+document.body.setHomePage('http://localhost:8088/BookStore/');
+}
+
+
+</script>
+
+
+  <div class="header">
+    <div id="headerleft"> <a href="index.jsp">Hannah's Book Store</a>
+      <p>The Smallest Book Store in the World</p>
+    </div>
+    <div id="headerright">
+      <%String name=(String)request.getParameter("UserName");
+                    String sname=(String)session.getAttribute("UserName");
+                    if(sname==null||sname.equalsIgnoreCase(""))
+                        {
+                        %>
+      <a href="register.jsp">Sign Up</a> <a href="login.jsp">Sign In</a> <a href="#" onclick="window.external.addFavorite('http://localhost:8088/BookStore','哥的书店')" title=标题
+>Add to Bookmark</a>
+      <%
+                    }
+                    else{
+                    %>
+      <h1 style="font-size:16px;">Welcome <%=sname%> </h1>
+      <span style="font-size:14px;"><a href="ShopCart.jsp?UserName=<%=name%>">My Cart</a></span>
+      <span style="font-size:14px;"><a href="ShopCart.jsp">My Wish List</a></span>
+      <br/>
+      <span style="font-size:14px;"><a href="usercenter.jsp">My Account</a></span>
+      <span style="font-size:14px;">&nbsp;&nbsp;<a href="quit.jsp?UserName=name">Sign Out</a></span>
+      <%}
+                            %>
+    </div>
+  </div>
+  <form  method="post" name="search" action="detailsearch.jsp" style="margin:2px 0px 0px">
+    <div class="search">
+      <table border="0">
+        <tbody>
+          <tr>
+            <td align="center" >Search
+            <td width="100"><div id="searchCategory" style="padding-left:10px;">
+                <select class="category" name="catelog" style="width:180px;" onchange="myfunction()">
+                  <option  value="Computer-Technology">Computer-Technology
+                  <option value="Finance">Finance
+                  <option value="Sports">Sports
+                  <option value="Education">Education
+                  <option value="Literature">Literature
+                </select>
+              </div>
+            <td width="250" style="padding-left:15px;"><input name="keywords" class="searchWord" type="text" size="25" />
+            <td><input name="according" type="radio" value="Book Name" checked="checked">
+              Book Name
+            <td><input name="according" type="radio"  value="Author" >
+              Author
+            <td><input  style="" name="button" type="submit"  value="Search" >
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </form>
+  
+

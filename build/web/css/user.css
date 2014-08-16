@@ -1,0 +1,173 @@
+@charset "utf-8";
+body{
+    background-image:url(../images/background.jpg);
+    background-attachment:fixed;
+}
+.wrap{
+    margin:0px auto;
+    width:1000px;
+}
+a:link{
+    color:#0099CC;
+}
+a:visited{
+    color:#0099CC;
+}
+a:hover{
+    color:orange;
+}
+
+img{
+    border:0;
+}
+.wrap{
+   overflow:hidden;
+    font-size: 18px;
+}
+.header{
+    margin:10px;
+    padding:10px;
+    overflow:hidden;
+    background-image: url(../images/header.gif);
+    height: 85px;
+}
+#headerleft a{
+    text-decoration:none;
+    font-family: 'Courier New',Courier,monospace;
+    font-size: 36px;
+    text-align: center;
+}
+#headerleft{
+    float:left;
+    padding-left:10px,auto;
+    width:auto;
+    border:thick;
+    font-family: Geneva,Arial,Helvetica,sans-serif;
+}
+
+#headerright{
+    float:right;
+    width:auto;
+    border:thick;
+}
+.header a:link{
+    color:maroon;
+}
+.header a:visited{
+    color:maroon;
+}
+.header a:hover{
+    color:purple;
+}
+.footer{
+    border-top:#999999 1px solid;
+    margin-top:30px;
+    width:100%;
+    font-size:medium;
+    text-align:center;
+}
+.search{
+float:left;
+margin-left:100px;
+border:thick;
+}
+
+.footer {
+    text-align:right;
+    padding-top:60px;
+    padding-right:60px;
+    height:95px;
+    clear: both;
+    background:url(../images/footer.png);
+    margin-bottom:10px;
+}
+
+.middle{
+    clear:both;
+    margin-left:22px;
+    height:864px;
+    background:url(../images/middle.png) repeat-y;
+    padding:10px;
+}
+.myTitle{
+    font-size: 1.5em;
+    font-weight:bold;
+    text-indent: .5em;
+    padding: 10px 0px;
+    margin-bottom:10px;
+    margin-right:25px;
+    border-bottom:2px solid #069;
+}
+.info{
+    float:left;
+    line-height:1.6em;
+    padding:10px;
+}
+
+#contentRight{
+    margin-left:160px;
+}
+#space{
+    text-align:right;
+    margin-left:15px;
+    height:10px;
+    width:700px;
+    float:left;
+    border-top:1px solid #069;
+    font-size:0.9em;
+    font-weight:bold;
+    padding-top:5px;
+}
+
+#main{
+    margin:0 30px;
+}
+#leftTable{
+    width:500px;
+    float:left;
+    margin-left:40px;
+    line-height:2em;
+}
+#rightInfo{
+    width:280px;
+    float:left;
+    margin-top:40px;
+}
+#line{
+    margin:10px 25px 10px 0;
+    border-bottom:1px solid #069;
+}
+#settle{
+    float:right;
+    margin-right:25px;
+}
+
+#item{
+    width:700px;
+    margin-left:10px;
+    border-bottom:1px solid #069;
+}
+
+#tile{
+    width:250px;
+    float:left;
+}
+
+#comment{
+    float:left;
+}
+#comment #myTitle{
+    width:700px;
+    font-size:1.2em;
+    font-weight:bold;
+    padding-bottom:5px;
+    margin-left:15px;
+    border-bottom:1px solid #069;
+}
+#comment #reader{
+    margin:10px 0 5px 0;
+    text-indent:1.5em;
+}
+#comment #content{
+    margin:0 0 10px 35px;
+}

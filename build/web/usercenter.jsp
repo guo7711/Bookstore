@@ -22,7 +22,7 @@
         String address=reg.getAdd(UserName);
         %>
         <div class="wrap">
-            <%@include file="/WEB-INF/jspf/header.jspf" %>
+            <%@include file="header.jsp" %>
             <div class="usercenter">
             <table width="80%" border="0" cellspacing="5" cellpadding="0">
         <tr>

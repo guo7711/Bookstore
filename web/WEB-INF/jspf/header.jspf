@@ -13,10 +13,8 @@
 %>
 <%@ page pageEncoding="gb2312" %>
 
-
-
 <script>
-            function myfunction()
+function myfunction()
 {
 document.search..submit();
 }
@@ -28,9 +26,7 @@ function setHome()
 {
 document.body.style.behavior='url(#default#homepage)';
 document.body.setHomePage('http://localhost:8088/BookStore/');
-}
-
-
+} 
 </script>
 
 
@@ -68,11 +64,11 @@ document.body.setHomePage('http://localhost:8088/BookStore/');
             <td align="center" >Search
             <td width="100"><div id="searchCategory" style="padding-left:10px;">
                 <select class="category" name="catelog" style="width:180px;" onchange="myfunction()">
-                  <option  value="Computer-Technology">Computer-Technology
-                  <option value="Finance">Finance
-                  <option value="Sports">Sports
-                  <option value="Education">Education
-                  <option value="Literature">Literature
+                    <option  value="Computer-Technology" selected="">Computer-Technology</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Education">Education</option>
+                    <option value="Literature">Literature</option>
                 </select>
               </div>
             <td width="250" style="padding-left:15px;"><input name="keywords" class="searchWord" type="text" size="25" />
@@ -80,7 +76,8 @@ document.body.setHomePage('http://localhost:8088/BookStore/');
               Book Name
             <td><input name="according" type="radio"  value="Author" >
               Author
-            <td><input  style="" name="button" type="submit"  value="Search" >
+            <td><input name="button" type="submit"  value="Search" >
+              
           </tr>
         </tbody>
       </table>

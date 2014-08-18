@@ -13,14 +13,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title><%=catelog%>--Hannah's BookStore</title>
 <%@page import="java.util.Vector"%>
-<link href="css/layout.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="/css/layout.css" rel="stylesheet" type="text/css" media="screen"/>
 </head>
-<body>
+<body background="/images/crossword.png">
     <div class="wrap">
-<%@include file="/WEB-INF/jspf/header.jspf" %>
-<%@include file="/WEB-INF/jspf/catelog.jspf" %>
+<%@include file="header.jsp" %>
+<%@include file="catelog.jsp" %>
 <jsp:useBean id="book" class="bookstore.Book" scope="page"/>
-
+    
 <%
         book.searchBasedCatelog(catelog);
         Vector V_Name=new Vector();
@@ -35,10 +35,10 @@
         V_Catelog=book.getV_Catelog();
         %>
 <div class="content">
-  <h1 class="catelogtop" style="margin:0px; font-size:36px; color:#855E42; border-bottom:#999999 1px dashed;">Category-<%=catelog%></h1>
+  <h1 class="catelogtop" style="margin:0px; font-size:36px; color:#855E42; border-bottom:#999999 1px dashed; margin-left: 150px" >Category-<%=catelog%></h1>
   <br/>
   <br/>
-  <div class="cateloglist">
+  <div class="cateloglist" style="margin-left: 150px">
     <%int page1=1;
                 int page2=1;
                 try   {page2=Integer.parseInt(request.getParameter("page"));   }

@@ -30,7 +30,7 @@
 </head>
 <body>
     <div class="wrap">
-<%@include file="/WEB-INF/jspf/header.jspf" %>
+<%@include file="header.jsp" %>
 <%
 
         Vector V_ISBN=new Vector();

@@ -53,8 +53,8 @@
 </script>
 
     <div class="wrap">
-    <%@include file="/WEB-INF/jspf/header.jspf" %>
-<%@include file="/WEB-INF/jspf/catelog.jspf" %>
+    <%@include file="header.jsp" %>
+<%@include file="catelog.jsp" %>
 
 <jsp:useBean id="cart" class="bookstore.ShopCart" scope="session"/>
 

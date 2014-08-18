@@ -5,13 +5,12 @@
 
 <html>
     <head>
+        
+                <link href="/css/layout.css" rel="stylesheet">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Hannah's Book Store</title>
-        <link href="css/layout.css" rel="stylesheet" type="text/css" media="screen"/>
-        <link href="../jquery-ui-1.11.1.custom/jquery-ui.css" rel="stylesheet">
-	<script src="../jquery-ui-1.11.1.custom/external/jquery/jquery.js"></script>
-	<script src="../jquery-ui-1.11.1.custom/jquery-ui.js"></script>
         
+   
         <%@page import="java.util.Vector"%>
         <script language="javascript">
             function  submit(UserName,ISBN){
@@ -24,8 +23,15 @@
     <body background="/Internet Explorer Wallpaper.jpg">
         
 <div class="wrap">
-        <%@include file="/WEB-INF/jspf/header.jspf" %>
-        <%@include file="/WEB-INF/jspf/catelog.jspf" %>
+    
+        <%//@include file="/WEB-INF/jspf/header.jspf" %>
+        <%//@include file="/WEB-INF/jspf/catelog.jspf" %> 
+        
+        <%@include file="catelog.jsp" %>
+        <%@include file="header.jsp"%>
+        <%--<jsp:include page="catelog.jsp" flush="false"/>--%>
+        <%--<jsp:include page="header.jsp" flush="false"/>--%>
+        
 <%
 //session.setAttribute("UserName", "");
 //session.setAttribute("Password", "");
@@ -63,9 +69,9 @@
             %>
 
         <div class="content">
-            <h1 class="contenttop" style="margin:0px; font-size:36px; color: #855E42 ">Best Sellers</h1>
+            <h1 class="contenttop" style="margin:10px; font-size:36px; color: #855E42; margin-left: 150px">Best Sellers</h1>
             
-            <div class="toplist">
+            <div class="toplist" style="margin-left: 150px">
                 <%
             int i=V_ISBN.size();
             for(int a=0;a<i;a++){

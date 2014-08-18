@@ -53,8 +53,8 @@
         cart.deleteAll(UserName);
         %>
 <div class="wrap">
-  <%@include file="/WEB-INF/jspf/header.jspf" %>
-  <%@include file="/WEB-INF/jspf/catelog.jspf" %>
+  <%@include file="header.jsp" %>
+  <%@include file="catelog.jsp" %>
   <div class="detailOrder">
     <jsp:useBean id="order" class="bookstore.Order" scope="session"/>
 

@@ -28,7 +28,7 @@
 </head>
 <body>
     <div class="wrap">
-    <%@include file="/WEB-INF/jspf/header.jspf" %>
+    <%@include file="header.jsp" %>
 <%
         String UserName=(String)session.getAttribute("UserName");
         String catelog=new String(request.getParameter("catelog").getBytes("ISO-8859-1"),"gb2312");

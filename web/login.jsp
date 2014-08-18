@@ -18,7 +18,7 @@
 </head>
 <body>
     <div class="wrap">
-<%@include file="/WEB-INF/jspf/header.jspf" %>
+<%@include file="header.jsp" %>
 <div class="login">
   <form  method="post"action="login.jsp">
     <div style="height:auto; margin-bottom:10px;">

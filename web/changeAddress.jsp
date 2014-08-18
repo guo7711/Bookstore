@@ -21,7 +21,7 @@
         <%String address=add.getAdd(UserName);
         %>
         <div class="wrap">
-            <%@include file="/WEB-INF/jspf/header.jspf" %>
+            <%@include file="header.jsp" %>
             <form name="chA" action="changeAddress.jsp" method="post">
             <div class="changeAdd">
                 <table border="0" cellspacing="15">

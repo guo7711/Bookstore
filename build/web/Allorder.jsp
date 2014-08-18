@@ -30,7 +30,7 @@
         //out.print(V_OrderID.get(0)+"!!"+V_State.get(0)+"!!"+V_totalprice.get(0));
         %>
         <div class="wrap">
-        <%@include file="/WEB-INF/jspf/header.jspf" %>
+        <%@include file="header.jsp" %>
         <form name="order" action="" method="post">
         <table  class="Allordertable"width="100" border="1" rules="groups">
         <tr>

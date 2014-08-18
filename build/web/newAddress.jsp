@@ -12,13 +12,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>丽痕书店-用户中心</title>
+        <title>User Home</title>
        
         <link href="css/user.css" rel="stylesheet" type="text/css" media="screen"/>
     </head>
     <body>
     <div class="wrap">
-        <%@include file = "WEB-INF/jspf/header.jspf" %>
+        <%@include file = "header.jsp" %>
         <jsp:useBean id="user" class="bookstore.Register" scope="session" />
         <%String UserName = (String) session.getAttribute("UserName");
         String address = user.getAdd(UserName);
